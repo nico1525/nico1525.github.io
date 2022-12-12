@@ -5,10 +5,22 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Fit n Fed</title>
 </head>
-
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function() {
+$('a[data-auto-download]').each(function(){
+var $this = $(this);
+setTimeout(function() {
+window.location = $this.attr('href');
+}, 2000);
+});
+});
+</script>
 <body>
-
-  <a href="https://nico1525.github.io/app/FitnFed.apk">link</a>
+  <div class="wrapper">
+    <p>The download should start shortly. If it doesn't, click
+    <a data-auto-download href="https://nico1525.github.io/app/FitnFed.apk">here</a>.</p>
+    </div>
 
 </body>
 </html>
